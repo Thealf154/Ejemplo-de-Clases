@@ -1,14 +1,14 @@
 package Reptiles;
 import Animales.*;
 
-class reptiles extends Animales {
+class Reptiles extends Animales {
 
     private double temperaturaCorporal;
     private boolean exoesqueleto;
     private String texturadepiel;
     private boolean esOviparo;
 
-    public reptiles(String sistemaDigestivo, String tiempoDeVida, boolean esOviparo, Double temperatura,
+    public Reptiles(String sistemaDigestivo, String tiempoDeVida, boolean esOviparo, Double temperatura,
             boolean exoesqueleto, String textura) {
         super(sistemaDigestivo, tiempoDeVida);
         this.esOviparo = esOviparo;
@@ -61,5 +61,4 @@ class reptiles extends Animales {
             System.out.println("Este animal no es de hueso exoesqueleto");
         }
     }
-
 }
