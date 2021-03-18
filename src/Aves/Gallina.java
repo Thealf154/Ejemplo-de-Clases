@@ -29,11 +29,10 @@ public class Gallina extends Aves{
     
     
     public void planear(){
-        if(getPlanea()==true){
+        if(this.Planea){
             System.out.println("La gallina esta planeando");
         }
         else {
-            System.out.println(getPlanea());
             System.out.println("La gallina no puede planear");
         }
     }
