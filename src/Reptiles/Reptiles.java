@@ -1,72 +1,65 @@
 package Reptiles;
-import javax.print.DocFlavor.STRING;
-
 import Animales.*;
-
-
 
 class reptiles extends Animales {
 
-    private boolean viviparo;
     private double temperaturaCorporal;
     private boolean exoesqueleto;
-    private STRING texturadepiel;
-	private boolean oviparo;
+    private String texturadepiel;
+    private boolean esOviparo;
 
-    public void reproducirse() {
-        System.out.println("Un reptil se est· reproduciendo");
+    public reptiles(String sistemaDigestivo, String tiempoDeVida, boolean esOviparo, Double temperatura,
+            boolean exoesqueleto, String textura) {
+        super(sistemaDigestivo, tiempoDeVida);
+        this.esOviparo = esOviparo;
+        this.temperaturaCorporal = temperatura;
+        this.exoesqueleto = exoesqueleto;
     }
 
+    @Override
+    public void reproducirse() {
+        System.out.println("Un reptil se est√° reproduciendo");
+    }
+
+    @Override
     public void respirar() {
-        System.out.println("Un reptil se est· reproduciendo");
+        System.out.println("Un reptil est√° respirando");
     }
 
     public void arrastrarse() {
         System.out.println("Esta arrastrandose");
     };
 
-    public void setviviparo(boolean tiene) {
-        this.viviparo = tiene;
+    public void setEsOviparo(boolean tiene) {
+        this.esOviparo = tiene;
     }
 
-    public boolean getviviparo() {
-        return this.viviparo;
-    }
-    
-    public void setoviparo(boolean tiene) {
-        this.oviparo = tiene;
+    protected boolean getviviparo() {
+        return this.esOviparo;
     }
 
-    public boolean getoviparo() {
-        return this.oviparo;
+    protected void setTexturaDePiel(String textura){
+        this.texturadepiel = textura;
     }
-    
-    
+
+    protected String getTexturaDePiel(){
+        return this.texturadepiel;
+    }
 
     protected void setTemperaturaCorporal(Double temperatura) {
         this.temperaturaCorporal = temperatura;
     }
 
-    protected void getTemperaturaCorporal(Double temperatura) {
-        this.temperaturaCorporal = temperatura;
+    protected double getTemperaturaCorporal(Double temperatura) {
+        return this.temperaturaCorporal;
     }
 
- public void reptil() {
-    	
-    	if (this.exoesqueleto) {
-    		System.out.println("Esta animal tiene exoesqueleto");
-    	}
-    	
-    	else {
-    		System.out.println("Este animal no es de hueso exoesqueleto");
-    	}
- }
-
-    public reptiles(String sistemaDigestivo, String tiempoDeVida, boolean viviparo, Double temperatura, boolean exoesqueleto){
-        super(sistemaDigestivo, tiempoDeVida);
-        this.viviparo = viviparo;
-        this.temperaturaCorporal = temperatura;
-        this.exoesqueleto = exoesqueleto;
+    protected void tieneExoesqueleto() {
+        if (this.exoesqueleto) {
+            System.out.println("Esta animal tiene exoesqueleto");
+        } else {
+            System.out.println("Este animal no es de hueso exoesqueleto");
+        }
     }
 
 }
