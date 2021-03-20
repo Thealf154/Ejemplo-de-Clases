@@ -30,5 +30,11 @@ public class Gato extends Terrestres {
         public String getColor (){
             return color;
         }
+
+        public void maullar (){
+
+            System.out.println(" ㅇㅅㅇ MIAUUUUUUUUUUU ㅇㅅㅇ");
+
+        }
     
 }
