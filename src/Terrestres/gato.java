@@ -1,11 +1,11 @@
 package Terrestres;
 
-public class gato extends Terrestres {
+public class Gato extends Terrestres {
 
     private int vidas = 9;
     private String color;
 
-    public gato (String sistemaDigestivo, String tiempoDeVida,String tipoDeRespiracion,boolean tienePatas,
+    public Gato (String sistemaDigestivo, String tiempoDeVida,String tipoDeRespiracion,boolean tienePatas,
     int vidas, String color) {
 
         super(sistemaDigestivo, tiempoDeVida, tipoDeRespiracion, tienePatas);
