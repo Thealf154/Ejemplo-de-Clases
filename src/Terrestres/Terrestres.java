@@ -4,15 +4,13 @@ import Animales.*;
 
 class Terrestres extends Animales {
 
-    protected String tipoDeRespiracion;
-    protected boolean tienePatas;
+    private String tipoDeRespiracion;
+    private boolean tienePatas;
 
     public Terrestres(String sistemaDigestivo, String tiempoDeVida,String tipoDeRespiracion,boolean tienePatas){
 	    super(sistemaDigestivo, tiempoDeVida);
 	    this.tipoDeRespiracion = tipoDeRespiracion;
 	    this.tienePatas = tienePatas;
-		//COmentario
-	
     }
 
 	public void respirar(){
