@@ -39,6 +39,8 @@ public class Conejo extends Terrestres {
         else {
             System.out.println("Este conejo es capaz de saltar.");
         }
+    
+    }
 
     public void alimentar (){
         if (this.alimento.equals("zanahoria")|| this.alimento.equals("zanahorias")|| this.alimento.equals("lechuga") || this.alimento.equals("lechugas")){
