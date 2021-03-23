@@ -1,26 +1,15 @@
 package Aves;
 
 public class Gallina extends Aves {
-
-    private String Colordepluma;
-    private boolean Planea;
-
-    Gallina(String sistemaDigestivo, String tiempoDeVida, String tipodevuelo, boolean vuela, String colordepluma,
-            boolean planea) {
-        super(sistemaDigestivo, tiempoDeVida, tipodevuelo, vuela);
-        this.Colordepluma = colordepluma;
+  
+    private boolean Planea; 
+    
+    Gallina(String sistemaDigestivo, String tiempoDeVida,String tipodevuelo, boolean vuela, String plumaje, boolean planea) {
+        super(sistemaDigestivo, tiempoDeVida, tipodevuelo, vuela, plumaje);
         this.Planea = planea;
     }
 
-    protected void setColordepluma(String colordepluma) {
-        this.Colordepluma = colordepluma;
-    }
-
-    protected String getColordepluma() {
-        return this.Colordepluma;
-    }
-
-    protected void setPlanea(boolean planea) {
+    public void setPlanea(boolean planea){
         this.Planea = planea;
     }
 
@@ -35,4 +24,14 @@ public class Gallina extends Aves {
             System.out.println("La gallina no puede planear");
         }
     }
+    public static void main(String[] args) {
+       Gallina gallina1 = new Gallina("Herbivoro", "1 año", "Por momentos", false, "cafe", true);
+       
+       System.out.println("La gallina es color " + gallina1.getPlumaje());
+       
+       gallina1.volar();
+       gallina1.planear();
+
+    }
+    
 }

@@ -6,11 +6,13 @@ class Aves extends Animales {
     
     protected String TipoDeVuelo;
     protected boolean Vuela;
+    protected String Plumaje;
 
-    public Aves(String sistemaDigestivo, String tiempoDeVida,String tipoDeVuelo,boolean vuela){
+    public Aves(String sistemaDigestivo, String tiempoDeVida,String tipoDeVuelo,boolean vuela, String plumaje){
 	super(sistemaDigestivo, tiempoDeVida);
         this.TipoDeVuelo = tipoDeVuelo;
         this.Vuela = vuela;
+        this.Plumaje = plumaje;
         
     }
 
@@ -28,6 +30,14 @@ class Aves extends Animales {
     
     public boolean getVuela(){
         return this.Vuela;
+    }
+    
+    public void setPlumaje(String plumaje){
+        this.Plumaje = plumaje;
+    }
+    
+    public String getPlumaje(){
+        return this.Plumaje;
     }
     
     
