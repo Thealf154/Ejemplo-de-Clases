@@ -1,8 +1,7 @@
 package Aves;
-    
-public class Gallina extends Aves{
-    
-    private String Colordepluma;
+
+public class Gallina extends Aves {
+  
     private boolean Planea; 
     
     Gallina(String sistemaDigestivo, String tiempoDeVida,String tipodevuelo, boolean vuela, String plumaje, boolean planea) {
@@ -13,18 +12,15 @@ public class Gallina extends Aves{
     public void setPlanea(boolean planea){
         this.Planea = planea;
     }
-    
-    public boolean getPlanea(){
+
+    protected boolean getPlanea() {
         return this.Planea;
     }
-    
-    
-    public void planear(){
-        if(getPlanea()==true){
+
+    protected void planear() {
+        if (this.Planea) {
             System.out.println("La gallina esta planeando");
-        }
-        else {
-            System.out.println(getPlanea());
+        } else {
             System.out.println("La gallina no puede planear");
         }
     }

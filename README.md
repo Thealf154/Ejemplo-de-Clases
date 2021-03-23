@@ -1,14 +1,7 @@
-## Getting Started
+## Avance de 18 de Marzo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Puede enconrar que las clases que ya sirven, son las que se encnentran en el paquete de Marinos.
 
-## Folder Structure
+## Nota
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+David no se ve como colaborador, pero es porque no pudo enviar sus cambios a GitHub. Ya los subí como si fueran míos.

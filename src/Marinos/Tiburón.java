@@ -7,7 +7,8 @@ public class Tiburón extends Marinos {
     Tiburón(String sistemaDigestivo, String tiempoDeVida, boolean tieneAletas, Double temperatura, Double presión,
             boolean haComidoHumanos, boolean esAgresivo) {
         super(sistemaDigestivo, tiempoDeVida, tieneAletas, temperatura, presión);
-
+        this.haComidoHumanos = haComidoHumanos;
+        this.esAgresivo = esAgresivo;
     }
 
     protected void setHaComidoHumanos(boolean comer){
