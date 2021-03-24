@@ -6,7 +6,7 @@ public class Cocodrile extends Reptiles {
 		super(sistemaDigestivo, tiempoDeVida, esOviparo, temperatura, exoesqueleto, textura);
 	}
 
-	public static void main(String[] args) {
+	protected static void main(String[] args) {
 		Cocodrile cocodrile = new Cocodrile("carnivoro", "70 años", 50.0, true);
 		cocodrile.arrastrarse();
 		cocodrile.reproducirse();
@@ -14,11 +14,11 @@ public class Cocodrile extends Reptiles {
 		cocodrile.viviparo();
 	}
 
-	public void arrastrarse() {
+	protected void arrastrarse() {
 		System.out.println("El cocodrilo se arrastra");
 	}
 
-	private void viviparo() {
+	protected void viviparo() {
 
 		System.out.println("El cocodrilo es viviparo");
 	}

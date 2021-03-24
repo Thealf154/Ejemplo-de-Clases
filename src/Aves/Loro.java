@@ -11,24 +11,24 @@ public class Loro extends Aves{
         this.Mup = mup;
     }
 
-    public void setHabla(boolean habla){
+    protected void setHabla(boolean habla){
         this.Habla = habla;
     }
     
-    public boolean getHabla(){
+    protected boolean getHabla(){
         return this.Habla;
     }
     
-    public void setMup(String mup){
+    protected void setMup(String mup){
         this.Mup = mup;
     }
     
-    public String getMup(){
+    protected String getMup(){
         return this.Mup;
     }
 
     
-    public void Hablar(){
+    protected void Hablar(){
         if(getHabla()==true){
             System.out.println("Este loro puede hablar");
         }

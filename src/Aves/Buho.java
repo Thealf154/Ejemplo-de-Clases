@@ -11,19 +11,19 @@ public class Buho extends Aves{
         this.Giracabeza = giracabeza;
     }
 
-    public void setUlular(boolean ulular){
+    protected void setUlular(boolean ulular){
         this.Ulular = ulular;
     }
     
-    public boolean getUlular(){
+    protected boolean getUlular(){
         return this.Ulular;
     }
     
-    public void setGiracabeza(boolean giracabeza){
+    protected void setGiracabeza(boolean giracabeza){
         this.Giracabeza = giracabeza;
     }
     
-    public boolean getGiracabeza(){
+    protected boolean getGiracabeza(){
         return this.Giracabeza;
     }
 
