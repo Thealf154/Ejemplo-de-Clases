@@ -30,7 +30,7 @@ package Reptiles;
 
 		public static void main(String[] args) {
 	       Lagartija lagartija = new Lagartija("carnivoro", "20 años" , 25.0, true);
-	       lagartija.arrastrarse();
+	       lagartija.deslizarse();
 	       lagartija.reproducirse();
 	       lagartija.respirar();
 	       lagartija.viviparo();
