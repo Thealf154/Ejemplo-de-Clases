@@ -45,5 +45,13 @@ public class Escarabajo extends Insectos{
         }
 
     }
+
+    public static void main(String[] args) {
+        System.out.println("Mostrando al escarabajo: ");
+
+        Escarabajo Escara1= new Escarabajo("Omnívoro", "6 meses", true, true, true, false);
+
+        Escara1.Order();
+    }
     
 }
