@@ -60,6 +60,8 @@ public class Conejo extends Terrestres {
         System.out.println("Mostrando al conejo:");
         System.out.println("Ingrese un alimento que quiera darle al conejo: ");
         feed = teclado1.next();
+        feed = feed.toLowerCase();
+        teclado1.close();
         
         Conejo conejo1 = new Conejo("herbívoro", "9 años", "Pulmonar", true, feed, 8);
 
