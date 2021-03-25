@@ -31,7 +31,18 @@ public final class Humanos extends Terrestres {
     }
 
     protected void hablar() {
-        System.out.println(this.nombre + "está hablando");
+        System.out.println(this.nombre + " está hablando");
+    }
+
+    public static void main(String[] args) {
+        
+        System.out.println("Mostrando al humano: ");
+
+        Humanos h1 = new Humanos("Omnivoros", "80 años", "Pulmonar", true, "Juan", "Masculino");
+
+        System.out.println("Este humano se llamas " + h1.getNombre() + ". Su sexo es " + h1.getSexo());
+
+        h1.hablar();
     }
 
 }
