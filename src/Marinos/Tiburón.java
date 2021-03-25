@@ -30,4 +30,13 @@ public class Tiburón extends Marinos {
     protected void jaws() {
         System.out.println("Dun dun dun dundun");
     }
+
+    public static void main(String[] args) {
+        System.out.println("Mostrando al tiburón");
+        Tiburón tiburon = new Tiburón("Carnivoro", "50 años", true, 40.0, 10.0, true, true);
+        System.out.println("Es agresivo: " + tiburon.getEsAgresivo());
+        System.out.println("Temperatura: " + tiburon.getTemperaturaCorporal());
+        System.out.println("Presión: " + tiburon.getPresiónAgua());
+        System.out.println("Ha comido humanos: " + tiburon.getHaComidoHumanos());
+    }
 }
