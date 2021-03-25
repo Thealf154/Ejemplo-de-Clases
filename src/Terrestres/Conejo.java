@@ -2,6 +2,7 @@ package Terrestres;
 
 import java.util.Scanner;
 
+
 public class Conejo extends Terrestres {
 
     private String alimento;
@@ -35,9 +36,9 @@ public class Conejo extends Terrestres {
 
     protected void saltar() {
         if (this.peso > 5) {
-            System.out.println("Este conejo pesa" + getPeso() + "kg. Está muy gordo y no puede saltar.");
+            System.out.println("Este conejo pesa " + getPeso() + "kg. Está muy gordo y no puede saltar.");
         } else {
-            System.out.println("Este conejo pesa" + getPeso() +  "kg. Es capaz de saltar.");
+            System.out.println("Este conejo pesa " + getPeso() +  "kg. Es capaz de saltar.");
         }
 
     }
@@ -52,7 +53,7 @@ public class Conejo extends Terrestres {
 
     }
 
-    public void public static void main(String[] args) {
+    public static void main(String[] args) {
 
         String feed;
         Scanner teclado1 = new Scanner (System.in);
