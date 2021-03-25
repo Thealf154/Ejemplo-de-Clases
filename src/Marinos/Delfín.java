@@ -54,5 +54,6 @@ public class Delfín extends Marinos {
         System.out.println("Sabe hacer trucos: " + delfín.getSabeTrucos());
         System.out.println("Obede Ordenes: " + delfín.getObedeceOrdenes());
         System.out.println("El delfín hara un truco:");
+        delfín.hazTruco();
     }
 }
