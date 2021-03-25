@@ -1,7 +1,5 @@
 package Terrestres;
 
-import java.util.Scanner;
-
 public class Gato extends Terrestres {
 
     private int vidas;
