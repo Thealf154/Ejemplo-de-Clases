@@ -1,5 +1,8 @@
 package Terrestres;
 
+import java.util.Scanner;
+
+
 public class Conejo extends Terrestres {
 
     private String alimento;
@@ -33,9 +36,9 @@ public class Conejo extends Terrestres {
 
     protected void saltar() {
         if (this.peso > 5) {
-            System.out.println("Este conejo está muy gordo y no puede saltar.");
+            System.out.println("Este conejo pesa " + getPeso() + "kg. Está muy gordo y no puede saltar.");
         } else {
-            System.out.println("Este conejo es capaz de saltar.");
+            System.out.println("Este conejo pesa " + getPeso() +  "kg. Es capaz de saltar.");
         }
 
     }
@@ -45,9 +48,25 @@ public class Conejo extends Terrestres {
                 || this.alimento.equals("lechugas")) {
             System.out.println("Este conejo se está alimentando correctamente");
         } else {
-            System.out.println("No puedes alimentar a un conejo con esto. Ellos comen zanahorias.");
+            System.out.println("No puedes alimentar a un conejo con " +  getAlimento() + ". Ellos comen zanahorias o lechuga.");
         }
 
+    }
+
+    public static void main(String[] args) {
+
+        String feed;
+        Scanner teclado1 = new Scanner (System.in);
+        System.out.println("Mostrando al conejo:");
+        System.out.println("Ingrese un alimento que quiera darle al conejo: ");
+        feed = teclado1.next();
+        feed = feed.toLowerCase();
+        teclado1.close();
+        
+        Conejo conejo1 = new Conejo("herbívoro", "9 años", "Pulmonar", true, feed, 8);
+
+        conejo1.alimentar();
+        conejo1.saltar();
     }
 
 }
