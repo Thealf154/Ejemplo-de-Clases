@@ -1,5 +1,7 @@
 package Terrestres;
 
+import java.util.Scanner;
+
 public class Elefante extends Terrestres {
 
     private double medidaColmillos;
@@ -36,12 +38,17 @@ public class Elefante extends Terrestres {
             System.out.println(
                     "Este elefante se encuentra en peligro de ser cazado ilegalmente por el tamaño de sus colmillos. ");
         }
+
+        else {
+            System.out.println("Este elefante no se encuentra en peligro de ser cazado ilegalmente por el tamaño de sus colmillos.");
+
+        }
     }
 
     protected void etapas() {
         if (años <= 3) {
 
-            System.out.println("Este animal se encuentra en su etapa de bebé.");
+            System.out.println("Este elefante se encuentra en su etapa de bebé.");
 
         }
 
@@ -67,6 +74,29 @@ public class Elefante extends Terrestres {
 
             System.out.println("Este elefante se encuentra en su etapa de vejez");
         }
+    }
+
+    public static void main(String[] args) {
+
+        double lar;
+        int age;
+        
+        Scanner teclado2 = new Scanner (System.in);
+        System.out.println("Mostrando elefante: ");
+
+        System.out.println("Ingrese el tamaño de los colmillos de este elefante en metros: ");
+        lar = teclado2.nextDouble();
+
+        System.out.println("Ingrese la edad de este elefante: ");
+        age = teclado2.nextInt();
+
+        teclado2.close();
+
+        Elefante ele1 = new Elefante("Herbívoro", "70 años", "tipoDeRespiracion", true, lar, age);
+
+        ele1.peligro();
+        ele1.etapas();
+
     }
 
 }
