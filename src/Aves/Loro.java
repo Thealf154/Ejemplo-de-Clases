@@ -38,7 +38,7 @@ public class Loro extends Aves {
     }
 
     public static void main(String[] args) {
-        System.out.println("Mostrnado el Buho");
+        System.out.println("Mostrnado el loro");
         Loro loro1 = new Loro("Herviboro", "80 años", "Constante", true, "verde", true, "Zurdo");
 
         System.out.println("El loro es color " + loro1.getPlumaje());
