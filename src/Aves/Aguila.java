@@ -38,6 +38,7 @@ public class Aguila extends Aves{
     }
     
     public static void main(String[] args) {
+        System.out.println("Mostando a la aguila");
        Aguila aguila1 = new Aguila ("Carnivoro", "5 años", "Constante", true, "cafe con blanco", "10 kg", true);
        
        System.out.println("El aguila es color " + aguila1.getPlumaje());

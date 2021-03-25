@@ -1,61 +1,61 @@
-package Anfibios;
+package  Anfibios ;
 
-import Animales.*;
+import  Animales.* ;
 
-public class Anfibios extends Animales {
+class  Anfibios  extends  Animales {
 
-    protected boolean oviparo;
-    protected boolean pielhumeda;
-    protected boolean esqueletooseo;
+    protected  boolean oviparo ;
+    protected  boolean pielhumeda;
+    protected  boolean esqueletooseo;
 
-    protected Anfibios(String sistemaDigestivo, String tiempoDeVida, boolean oviparo, boolean piel, boolean esqueleto) {
-        super(sistemaDigestivo, tiempoDeVida);
+    protected  Anfibios( String sistemaDigestivo , String tiempoDeVida , boolean oviparo, boolean piel , boolean esqueleto) {
+        super (sistemaDigestivo, tiempoDeVida);
         this.oviparo = oviparo;
         this.pielhumeda = piel;
         this.esqueletooseo = esqueleto;
     }
 
-    public void respirar(){
-        System.out.println("Reptil está respirando");
+    public void respirar (){
+        System.out.println("Un anfibio está respirando");
     }
 
-    public void reproducirse(){
-        System.out.println("Reptil esta reproduciendose");
+    public void reproducirse (){
+        System.out.println("Un anfibio esta reproduciendose");
     }
 
-    public void dormir() {
-        System.out.println(" Un anfibio esta en un sueño invernal ");
+    protected  void  comer () {
+        System.out.println ( " Un anfibio esta comiendo un insecto " );
     }
 
-    public void crecer() {
-        System.out.println(" Un anfibio esta creciendo mediante metamorfosis ");
+     protected void temperatura () {
+        System.out.println ( " Un anfibio esta controlando su temperatura " );
     }
 
-    protected void cambiarpiel() {
-        System.out.println("Un anfibio esta cambiando de piel .  .  . ");
+     protected void cambiarpiel () {
+        System.out.println ( "Un anfibio esta cambiando de piel .  .  . " );
     };
 
-    protected void setOviparo(boolean es) {
+    protected  void  set ( boolean  es ) {
         this.oviparo = es;
     }
 
-    protected boolean getOviparo() {
-        return this.oviparo;
+    protected  boolean  getOviparo () {
+        return  this.oviparo;
     }
 
-    protected void setPielhumeda(boolean piel) {
+     protected void setPielhumeda ( boolean  piel ) {
         this.pielhumeda = piel;
     }
 
-    protected boolean getPielhumeda() {
+    protected  boolean  getPielhumeda () {
         return this.pielhumeda;
     }
 
-    protected void setEsqueletooseo(boolean esqueleto) {
+    protected void setEsqueletooseo  ( boolean  esqueleto) {
         this.esqueletooseo = esqueleto;
     }
 
-    protected boolean getEsqueletooseo() {
+    protected boolean getEsqueletooseo () {
         return this.esqueletooseo;
     }
 }

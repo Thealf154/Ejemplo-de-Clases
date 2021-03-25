@@ -25,6 +25,7 @@ public class Gallina extends Aves {
         }
     }
     public static void main(String[] args) {
+        System.out.println("Mostrando la gallina");
        Gallina gallina1 = new Gallina("Herbivoro", "1 año", "Por momentos", false, "cafe", true);
        
        System.out.println("La gallina es color " + gallina1.getPlumaje());
