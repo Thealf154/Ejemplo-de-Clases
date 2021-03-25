@@ -30,7 +30,7 @@ public final class Humanos extends Terrestres {
         return this.sexo;
     }
 
-    public void hablar() {
+    protected void hablar() {
         System.out.println(this.nombre + "está hablando");
     }
 
