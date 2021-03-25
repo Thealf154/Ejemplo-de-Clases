@@ -44,4 +44,15 @@ public class Delfín extends Marinos {
     protected boolean getObedeceOrdenes() {
         return this.obedeceOrdenes;
     }
+
+    public static void main(String[] args) {
+        System.out.println("Mostrando al delfín");
+        Delfín delfín = new Delfín("Carnivoro", "10 años", true, 40.0, 10.0, true, true);
+        System.out.println("Tiene aletas: " + delfín.getTieneAletas());
+        System.out.println("Temperatura: " + delfín.getTemperaturaCorporal());
+        System.out.println("Presión: " + delfín.getPresiónAgua());
+        System.out.println("Sabe hacer trucos: " + delfín.getSabeTrucos());
+        System.out.println("Obede Ordenes: " + delfín.getObedeceOrdenes());
+        System.out.println("El delfín hara un truco:");
+    }
 }

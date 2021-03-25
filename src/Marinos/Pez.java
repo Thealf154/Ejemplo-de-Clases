@@ -30,11 +30,14 @@ public class Pez extends Marinos {
     }
 
     public static void main(String[] args) {
-        Pez Pez = new Pez("Herbivoro", "10 años", true, 70.0, 70.0, "Dorado", true);
-        Pez.Nadar();
-        Pez.reproducirse();
-        Pez.beberDelRío();
-        System.out.println(Pez.getTieneAletas());
+        Pez pez = new Pez("Herbivoro", "3 años", true, 70.0, 70.0, "Dorado", true);
+        System.out.println("Tiene aletas: " + pez.getTieneAletas());
+        System.out.println("Temperatura: " + pez.getTemperaturaCorporal());
+        System.out.println("Presión: " + pez.getPresiónAgua());
+        System.out.println("Tiene Aletas: " + pez.getTiempoDeVida());
+        pez.Nadar();
+        pez.reproducirse();
+        pez.beberDelRío();
     }
 
 }
