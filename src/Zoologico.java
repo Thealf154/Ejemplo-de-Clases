@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 import Anfibios.*;
 import Aves.*;
-import Humannos.*;
 import Marinos.*;
 import Reptiles.*;
 import Terrestres.*;
